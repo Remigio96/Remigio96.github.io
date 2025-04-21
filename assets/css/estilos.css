@@ -78,8 +78,12 @@ footer img:hover {
     width: 100px;
   }
 
-}
+  #Hero-Section {
+    background-size: 80%;
+    background-position: center;
+  }
 
+}
 /* ===== Custom Cursor ===== */
 #cursor, #cursor-follower {
   position: fixed;

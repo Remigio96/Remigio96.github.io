@@ -37,6 +37,8 @@ El proyecto incluye:
 
 - Sección de presentación personal.
 - Sección de proyectos (Mis trabajos) con cards responsivas.
+- Sección de educación.
+- Sección de experiencia.
 - Footer con enlaces a redes sociales.
 - Navbar responsiva con toggle funcional.
 - Efectos de hover y transiciones suaves en íconos y cards.
@@ -46,7 +48,7 @@ El proyecto incluye:
 
 ## Enlace al sitio en vivo 🌐
 
-[Ver portafolio online aquí](https://jovial-choux-232e3e.netlify.app/)
+[Ver portafolio online aquí](https://remigio96.github.io/)
 
 ---
 

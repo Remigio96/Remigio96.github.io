@@ -1,81 +1,95 @@
-<img width="800" alt="Logoremi" src="https://github.com/user-attachments/assets/63d4dfc0-8b10-4a01-a913-4fcf7a187244" />
+# 🕌 Instructivo para colaborar en el proyecto `Remigio96.github.io`
 
-
-# Portafolio - Remigio Stocker
-En este proyecto se trabajó el manejo de Git, GitHub, SSH, y Terminal, además de aplicar buenas prácticas de desarrollo web, diseño responsivo y personalización de un portafolio online.
-
----
-
-## Descripción General 🖥️
-
-Se partió desde un proyecto forkeado y clonado desde GitHub, el cual fue modificado por completo para representar un portafolio personal real, adaptado a mi perfil.
-
-El proyecto incluye:
-- Personalización total de contenido.
-- Integración de enlaces reales a proyectos.
-- Diseño responsive adaptable a cualquier dispositivo.
-- Implementación de buenas prácticas de Git y commits ordenados.
-- Uso de Bootstrap 5 y CSS custom.
+¡Hola equipo! 👋
+Aquí les dejo las instrucciones paso a paso para poder colaborar correctamente en el proyecto:
 
 ---
 
-## Tecnologías Utilizadas 🚀
+## ✅ Pasos que deben seguir:
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- Git
-- GitHub
-- SSH
-- VSCode
-- Responsive Design
-- Flexbox & Grid
+### 1. **Fork del proyecto**
+- Entrar a este repositorio: [https://github.com/Remigio96/Remigio96.github.io](https://github.com/Remigio96/Remigio96.github.io)
+- Hacer clic en el botón **"Fork"** (arriba a la derecha).
+- Esto creará una **copia del proyecto en sus propias cuentas de GitHub**.
+
+### 2. **Clonar su fork a sus computadoras**
+
+```bash
+git clone https://github.com/TU-USUARIO/Remigio96.github.io.git
+```
+(Reemplazar `TU-USUARIO` por tu usuario real de GitHub).
+
+### 3. **Entrar a la carpeta clonada**
+
+```bash
+cd Remigio96.github.io
+```
+
+### 4. **Crear una nueva rama para trabajar** (recomendable)
+
+```bash
+git checkout -b nombre-de-tu-rama
+```
+Ejemplo:
+```bash
+git checkout -b mejora-seccion-educacion
+```
+
+### 5. **Hacer cambios en el proyecto**
+- Editar el código HTML, CSS, imágenes, etc.
+- Guardar los cambios.
+
+### 6. **Agregar y hacer commit de los cambios**
+
+```bash
+git add .
+git commit -m "Descripción breve del cambio"
+```
+Ejemplo:
+```bash
+git commit -m "Agregada sección de experiencia laboral"
+```
+
+### 7. **Subir (push) la rama a su fork en GitHub**
+
+```bash
+git push origin nombre-de-tu-rama
+```
+Ejemplo:
+```bash
+git push origin mejora-seccion-educacion
+```
+
+### 8. **Crear un Pull Request (PR)**
+- Ir a tu repositorio en GitHub (el fork).
+- Aparecerá un botón que dice **"Compare & pull request"**. Haz clic allí.
+- **IMPORTANTE:**
+  - Asegúrate que el Pull Request **apunte a la rama `develop` del repositorio original** (no a `main`).
+  - Si aparece `base: main`, cambiarlo a `base: develop`.
+- Escribir un pequeño comentario explicando qué cambios hicieron.
+- Enviar el Pull Request.
 
 ---
 
-## Funcionalidades del sitio ⚙️
+# 📉 Resumen visual de pasos:
 
-- Sección de presentación personal.
-- Sección de proyectos (Mis trabajos) con cards responsivas.
-- Sección de educación.
-- Sección de experiencia.
-- Footer con enlaces a redes sociales.
-- Navbar responsiva con toggle funcional.
-- Efectos de hover y transiciones suaves en íconos y cards.
-- Diseño adaptable a todas las resoluciones.
+```text
+Fork ➔ Clone ➔ Nueva Rama ➔ Cambios ➔ Commit ➔ Push ➔ Pull Request hacia develop
+```
 
 ---
 
-## Enlace al sitio en vivo 🌐
+# 📍 Cosas importantes que deben recordar:
 
-[Ver portafolio online aquí](https://remigio96.github.io/)
-
----
-
-## Enlaces de contacto 🔗
-
-- [LinkedIn](https://www.linkedin.com/in/remigio-ignacio-inzunza-stocker/)
-- [Behance](https://www.behance.net/remigioinzunza)
-- [GitHub](https://github.com/Remigio96)
-- [Correo](mailto:stocker.remi@gmail.com)
-- [WhatsApp](https://api.whatsapp.com/send/?phone=56944173410)
+- **NO** deben hacer Pull Request directo a `main`.
+- **SIEMPRE** deben hacer su PR contra `develop`.
+- Hacer **fork, commit y pull request** es parte del desafío.
 
 ---
 
-## ¿Qué aprendí en este desafío? 🧠
+# 🌟 Extra: ¿Qué pasa si crean un PR hacia `main`?
 
-- Gestión de versiones con Git de forma ordenada.
-- Uso de ramas remotas, SSH y Fork en GitHub.
-- Escribir commits profesionales (feat, fix, style, chore...).
-- Aplicar diseño responsivo correcto con Bootstrap.
-- Trabajar estructura y estética en HTML + CSS.
-- Buenas prácticas de desarrollo web profesional.
-- Preparar un proyecto para ser visto y compartido online.
-
----
-
-## Autor 👨‍💻
-
-Remigio Ignacio Inzunza Stocker
-Diseñador UX/UI y Desarrollador Web en formación.
-
+- **Sí pueden** crear el Pull Request.
+- **No les saldrá error**.
+- **No se podrá hacer el Merge directo** si no cumple con las reglas de protección.
+- **Yo puedo cambiar el destino del PR** a `develop` si fuera necesario.

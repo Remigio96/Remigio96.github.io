@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
+    <body id="top" class="d-flex flex-column min-vh-100">
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -481,6 +483,9 @@
         </div>
       </div>
     </footer>
+    <a href="#top" class="btn-back-to-top" title="Volver arriba">🔝</a>
+
+    
     <script
       src="https://kit.fontawesome.com/b42967c374.js"
       crossorigin="anonymous"
@@ -490,6 +495,21 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/script.js"></script>
+    <script>
+      const btn = document.querySelector('.btn-back-to-top');
+    
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const bodyHeight = document.body.offsetHeight;
+    
+        // Mostrar el botón cuando estás al 80% de scroll
+        if (scrollTop + windowHeight >= bodyHeight * 0.8) {
+          btn.style.display = 'block';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+    </script>
   </body>
 </html>

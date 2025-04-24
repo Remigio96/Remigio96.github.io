@@ -16,6 +16,10 @@ nav {
   background-position: left 20%;
   background-color: #020101; /* O el color que quieras de fondo */
 }
+/* Educacion */
+#Educacion{
+  background-color: #1A1A1A;
+}
 /* Mis trabajos */
 #Mis-trabajos .image-top {
   height: 250px;
